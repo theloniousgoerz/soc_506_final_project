@@ -5,10 +5,56 @@ date: "5/24/2021"
 output: html_document
 ---
 
-```{r}
-# Load in the data. 
+# Introduction 
+
+Researchers are often interested how opinion on cannonically controversial social issues like sexual education in public schools is associated with different demographic characteristics. In this analysis, I take this question and explore how opinions and acceptance about sex education vary accross the income distribution. Particularly central to this analysis is an understanding of how high income individuals favor or do not favor different policies regarding better health education. 
+
+In this analysis I estimate a logistic regression and a multinomail regression. The first logistic regression looks at how income and associated covariates predict support or opposition to sex education in school. The same covariates and sex education are then used to predict income level. 
+
+```{r, cache = T}
+# Load the packages 
 library(tidyverse)
-data <- read_csv("./Data/5-24-21_BIOA_survey_data.csv") # Data as of monday the 24th of may 
-data %>% na.omit
+library(gssr)
+library(nnet)
+library(effects)
+# Load in the data. 
+# Load the data. 
+data_gss <- data("gss_all")
+data(gss_doc)
+# Filter down to cross sectional data for the project. 
+# Select the data year. 
+data_gss <- gss_all %>% 
+  # Select data. 
+  select(year,
+         sexeduc, # 1 = favor, 2 = oppose, 3 = depends 
+         race, # Race of respondant. 
+         sex, # Sex of the respondant. 
+         hispanic, # Hispanic or not. 
+         region, # Region. 
+         income, # Income of the household. 
+         rincome, # Income of the respondant. 
+         degree, # Degree status.
+         religid, # Religious affiliation. 
+         attweek, # Attendanc of relig per week. 
+         cohort # Year born
+         ) %>% 
+  # Select year. 
+  filter(year == 2018)
+
+```
+
+```{r}
+# Data cleaning. 
+str(data_gss)
+
+data_gss %>% # Need to fix from haven to factor variables. 
+
+```
+
+```{r}
+# Plotting. 
+data_gss %>% 
+  ggplot(aes(as_factor(income))) + geom_bar()
+# Analysis 
 ```
 
