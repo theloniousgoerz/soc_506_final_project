@@ -1,0 +1,14 @@
+---
+title: 'Final Project Sketchpad'
+author: "Thelonious Goerz"
+date: "5/24/2021"
+output: html_document
+---
+
+```{r}
+# Load in the data. 
+library(tidyverse)
+data <- read_csv("./Data/5-24-21_BIOA_survey_data.csv") # Data as of monday the 24th of may 
+data %>% na.omit
+```
+
