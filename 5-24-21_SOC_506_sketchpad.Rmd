@@ -47,14 +47,16 @@ data_gss <- gss_all %>%
 # Data cleaning. 
 str(data_gss)
 
-data_gss %>% # Need to fix from haven to factor variables. 
+data_gss %>% 
+  filter(sexeduc != "NA")
+  # Need to fix from haven to factor variables. 
 
 ```
 
 ```{r}
 # Plotting. 
 data_gss %>% 
-  ggplot(aes(as_factor(income))) + geom_bar()
+  ggplot(aes(as_factor(sexeduc))) + geom_bar()
 # Analysis 
 ```
 
