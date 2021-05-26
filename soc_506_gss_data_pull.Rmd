@@ -1,0 +1,41 @@
+---
+title: 'Final Project Sketchpad: Data'
+author: "Thelonious Goerz"
+date: "5/24/2021"
+output: html_document
+---
+```{r, cache = T, include = F}
+# Load the packages 
+library(tidyverse)
+library(gssr)
+# Load in the data. 
+# Load the data. 
+data_gss <- data("gss_all")
+data(gss_doc)
+# Filter down to cross sectional data for the project. 
+# Select the data year. 
+data_gss <- gss_all %>% 
+  # Select data. 
+  select(year,
+         sexeduc, # 1 = favor, 2 = oppose, 3 = depends 
+         race, # Race of respondant. 
+         sex, # Sex of the respondant. 
+         hispanic, # Hispanic or not. 
+         region, # Region. 
+         income, # Income of the household. 
+         rincome, # Income of the respondant. 
+         degree, # Degree status.
+         religid, # Religious affiliation. 
+         attweek, # Attendanc of relig per week. 
+         cohort # Year born
+         ) %>% 
+  # Select year. 
+  filter(year == 2018)
+
+# Save data 
+#write_csv(data_gss, file = "./Data/gss_proj_data.csv")
+```
+
+
+
+

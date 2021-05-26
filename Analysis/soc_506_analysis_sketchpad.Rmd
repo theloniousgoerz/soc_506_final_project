@@ -1,0 +1,90 @@
+---
+title: "SOC 506: Analysis"
+output: html_document
+
+---
+
+```{r}
+# Load packages 
+library(readr)
+library(tidyverse)
+library(nnet)
+library(effects)
+library(haven)
+library(gtsummary)
+data_gss <- read_csv("../Data/gss_proj_data.csv")
+
+# Data cleaning. 
+str(data_gss)
+
+gss_clean <- data_gss %>% 
+  filter(sexeduc != "NA")
+
+  gss_clean <- gss_clean %>%  filter(income %in% c(1:13),
+                        degree %in% (0:4)) %>%
+    mutate(sexeduc = plyr :: mapvalues(sexeduc, from = c(1,2,3), to = c("favor","oppose","depends")),
+           race = plyr :: mapvalues(race, from = c(1,2,3), to = c("white","black","other")), 
+           sex = plyr :: mapvalues(sex, from = c(1,2), to = c("male","female")),
+           income = plyr :: mapvalues(income, 
+                                      from = c(1:13),
+                                      to = c("1,000 or less",
+                                             "1,000 to 2,999",
+                                             "3,000 to 3,999",
+                                             "4,000 to 4,999",
+                                             "5,000 to 5,999",
+                                             "6,000 to 6,999",
+                                             "7,000 to 7,999",
+                                             "8,000 to 9,999",
+                                             "10,000 to 14,999",
+                                             "15,000 to 19,999",
+                                             "20,000 to 24,999",
+                                             "25,000 or more",
+                                             "Refused")),
+           rincome = plyr :: mapvalues(rincome, from = c(1:13), 
+                                       to = c("1,000 or less",
+                                             "1,000 to 2,999",
+                                             "3,000 to 3,999",
+                                             "4,000 to 4,999",
+                                             "5,000 to 5,999",
+                                             "6,000 to 6,999",
+                                             "7,000 to 7,999",
+                                             "8,000 to 9,999",
+                                             "10,000 to 14,999",
+                                             "15,000 to 19,999",
+                                             "20,000 to 24,999",
+                                             "25,000 or more",
+                                             "Refused")),
+           degree = plyr :: mapvalues(degree, 
+                                      from= c(0:4),
+                                      to = c("Less than HS",
+                                             "HS",
+                                             "JR college",
+                                             "Bachelor",
+                                             "Graduate")),
+           hispanic = ifelse(hispanic == 1,"Not Hispanic","Hispanic"),
+           region = plyr :: mapvalues(region, from = c(1:9),
+                                      to = c("New England", 
+                                             "Mid Atlantic",
+                                             "E N Central",
+                                             "W N Central",
+                                             "S Atlantic",
+                                             "E S Central",
+                                             "W S Central",
+                                             "Mountain",
+                                             "Pacific"))) %>% 
+    select(year,race,sex,sexeduc,hispanic,region,income,rincome,degree,cohort) 
+  # Need to fix from haven to factor variables. 
+## Clean GSS data
+gss_clean <- gss_clean %>% filter(rincome != is.na(rincome))
+
+```
+
+# Analysis 
+
+```{r}
+# Look at the data. 
+# Create some summary statistics 
+tbl_summary(gss_clean)
+
+```
+
