@@ -81,10 +81,23 @@ gss_clean <- gss_clean %>% filter(rincome != is.na(rincome))
 
 # Analysis 
 
+### Summary Statistics 
+
 ```{r}
 # Look at the data. 
 # Create some summary statistics 
 tbl_summary(gss_clean)
-
 ```
+
+### Analysis 
+
+In this section I conduct the analysis using logistic regression. After presenting full and restricted models of the data, I summarize the results and I present some implications. After that, I present a description of the model validation and testing for prediction after. 
+
+### Model validation
+
+### Discussion and conclusion 
+
+### Code appendix
+
+
 
