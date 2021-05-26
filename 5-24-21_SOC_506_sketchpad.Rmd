@@ -11,7 +11,7 @@ Researchers are often interested how opinion on cannonically controversial socia
 
 In this analysis I estimate a logistic regression and a multinomail regression. The first logistic regression looks at how income and associated covariates predict support or opposition to sex education in school. The same covariates and sex education are then used to predict income level. 
 
-```{r, cache = T}
+```{r, cache = T, include = F}
 # Load the packages 
 library(tidyverse)
 library(gssr)

@@ -1,0 +1,17 @@
+---
+title: 'SOC 506: Final Research Report'
+author: "Thelonious Goerz"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+header-includes:
+- \usepackage{pdflscape}
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
+- \usepackage{setspace}\doublespacing
+output: pdf_document
+---
+
+# Introduction 
+
+Researchers are often interested how opinion on cannonically controversial social issues like sexual education in public schools is associated with different demographic characteristics. In this analysis, I take this question and explore how opinions and acceptance about sex education vary accross the income distribution. Particularly central to this analysis is an understanding of how high income individuals favor or do not favor different policies regarding better health education. 
+
+In this analysis I estimate a logistic regression and a multinomail regression. The first logistic regression looks at how income and associated covariates predict support or opposition to sex education in school. The same covariates and sex education are then used to predict income level. 
