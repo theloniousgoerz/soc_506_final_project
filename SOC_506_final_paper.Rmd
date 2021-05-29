@@ -8,10 +8,71 @@ header-includes:
 - \newcommand{\elandscape}{\end{landscape}}
 - \usepackage{setspace}\doublespacing
 output: pdf_document
+fontsize: 12pt 
+bibliography: references.bib
 ---
 
 # Introduction 
 
 Researchers are often interested how opinion on cannonically controversial social issues like sexual education in public schools is associated with different demographic characteristics. In this analysis, I take this question and explore how opinions and acceptance about sex education vary accross the income distribution. Particularly central to this analysis is an understanding of how high income individuals favor or do not favor different policies regarding better health education. 
 
-In this analysis I estimate a logistic regression and a multinomail regression. The first logistic regression looks at how income and associated covariates predict support or opposition to sex education in school. The same covariates and sex education are then used to predict income level. 
+First, I present a description of the data and a discussion of the analytic strategy. Then I step through the methods, present some visual and desriptive results. In this analysis I estimate a logistic regression. The first logistic regression looks at how income and associated covariates predict support or opposition to sex education in school. I estimate a variety of formulations and I step through analysis and model critique.
+
+Finally, I offer some conclusions and insights about the relationship between race, income, and attitudes about sex education. This document is accompanied by a detailed repository that is also on github \url{https://github.com/theloniousgoerz}, which provides all of the supplemental code and documentation needed to generate this report and the analysis. 
+
+# Background and data 
+
+Effective sex education in public schools has been shown to be important from a health, social and community wellbeing [@fentahun2012parents;@bearman2004chains ]. @bearman2004chains finds that in closed social networks at schools, taking a comprehensive sexual education approach is important for reducing disease, rather than focusing on high risk actors. In addition to this, many health classes attempt to provide this but there is often major pushback from religious groups and other organizations that seeks to restrict public sex education in schools. 
+
+With this motivation, I focus this analysis on looking at the covariates and potential predictors of support or lackthereof related to sex education. In this analysis, I use the General Social Survey (GSS), the longest running nationally representative opinion poll, to understand how different economic, racial, and place based attributes correlated with supporting sex education. While the GSS cannot be compared over time like a normal panel survey can, it can represent ggregate opinions and provides rich data to do so.
+
+I employ the GSSR package to look at the 2018 sample of respondants, and use the question "sexeduc" to test this hypothesis. In the table below, I summarize the variables that I pull from. I exlude income and respondant income and provide those in the appendix as they have many categories. 
+
+```{r, include = F}
+# Load packages
+library(tidyverse)
+library(gtsummary)
+library(effects)
+library(gt)
+# Load data. 
+data <- read_csv("./Data/gss_clean.csv")
+# RM cols. 
+
+```
+
+```{r, echo = F, message = F, warning = F, fig.width=5}
+# Cleaning 
+
+# RM NA from cohort. 
+data <- data %>% filter(cohort != is.na(cohort) & hispanic != is.na(hispanic))
+# Make an age variable. 
+data <- data %>% mutate(age = 2018-cohort)
+# Summary table 
+library(kableExtra)
+data %>% select(-cohort,-year,-rincome,-income)  %>% 
+  tbl_summary(label = list(
+            sexeduc ~ "View on Sex Education",
+            race ~ "Race",
+            degree ~ "Degree", 
+            age ~ "Age", 
+            hispanic ~ "Hispanic"
+          )
+          ) %>% 
+   as_kable_extra(booktabs = T) %>% ## make KE so that it will take args from gtsum 
+  # reduce font size to make table fit. 
+  # you may also use the `latex_options = "scale_down"` argument here.
+ kableExtra::kable_styling(font_size = 10, position = "center")
+```
+
+### Analysis 
+
+In this section I conduct the analysis using logistic regression. After presenting full and restricted models of the data, I summarize the results and I present some implications. After that, I present a description of the model validation and testing for prediction after. 
+
+### Model validation
+
+### Discussion and conclusion 
+
+### Code appendix
+
+
+

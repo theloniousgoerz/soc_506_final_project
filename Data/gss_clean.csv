@@ -1,0 +1,799 @@
+year,race,sex,sexeduc,hispanic,region,income,rincome,degree,cohort
+2018,white,male,oppose,Hispanic,New England,"25,000 or more","25,000 or more",Bachelor,1976
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"5,000 to 5,999","1,000 to 2,999",Less than HS,1956
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",HS,1963
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Graduate,1959
+2018,other,female,favor,Hispanic,New England,"20,000 to 24,999","15,000 to 19,999",HS,1984
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","10,000 to 14,999",HS,1943
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1963
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1984
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",JR college,1978
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1981
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","15,000 to 19,999",Bachelor,1962
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1950
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1962
+2018,white,male,favor,Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Graduate,1973
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"10,000 to 14,999","10,000 to 14,999",HS,1953
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1966
+2018,white,female,favor,Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1972
+2018,white,male,favor,Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Graduate,1978
+2018,white,female,favor,Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1976
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Graduate,1959
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"8,000 to 9,999","8,000 to 9,999",HS,1973
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"7,000 to 7,999","6,000 to 6,999",HS,1990
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"5,000 to 5,999","3,000 to 3,999",HS,1991
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","20,000 to 24,999",Less than HS,1976
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1977
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1984
+2018,black,female,oppose,Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Graduate,1986
+2018,black,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",JR college,1981
+2018,other,female,favor,Hispanic,Mid Atlantic,"25,000 or more","15,000 to 19,999",HS,1981
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1978
+2018,black,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1990
+2018,other,female,favor,Hispanic,Mid Atlantic,"25,000 or more","1,000 or less",HS,1965
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Graduate,1963
+2018,other,male,favor,Not Hispanic,Mid Atlantic,"8,000 to 9,999","8,000 to 9,999",Graduate,1990
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Graduate,1976
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","15,000 to 19,999",Graduate,1941
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1988
+2018,black,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1973
+2018,other,male,oppose,NA,Mid Atlantic,"25,000 or more","25,000 or more",Less than HS,1970
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Graduate,1962
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1958
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1995
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","10,000 to 14,999",HS,1962
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",HS,1986
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",HS,1957
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1949
+2018,other,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Graduate,1970
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Graduate,1950
+2018,white,male,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",Graduate,1980
+2018,other,male,favor,Hispanic,Pacific,"25,000 or more","8,000 to 9,999",HS,1985
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","8,000 to 9,999",Less than HS,1980
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","10,000 to 14,999",HS,1993
+2018,white,male,favor,Not Hispanic,Pacific,"20,000 to 24,999","8,000 to 9,999",HS,1984
+2018,other,male,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1962
+2018,black,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1984
+2018,black,female,favor,Hispanic,Pacific,"10,000 to 14,999","10,000 to 14,999",Bachelor,1992
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",Graduate,1959
+2018,other,male,favor,Hispanic,Pacific,"1,000 to 2,999","25,000 or more",Less than HS,1961
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1960
+2018,other,female,favor,Hispanic,Pacific,"25,000 or more","6,000 to 6,999",HS,1998
+2018,other,female,favor,Hispanic,Pacific,"15,000 to 19,999","7,000 to 7,999",Less than HS,1970
+2018,white,female,favor,Hispanic,Pacific,"10,000 to 14,999","10,000 to 14,999",Less than HS,1967
+2018,other,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1977
+2018,white,male,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1982
+2018,other,male,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1953
+2018,other,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1991
+2018,white,male,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",Graduate,1982
+2018,white,male,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",Graduate,1984
+2018,other,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1972
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",Less than HS,1946
+2018,other,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1972
+2018,other,male,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1972
+2018,other,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1982
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1958
+2018,other,female,favor,Hispanic,Pacific,"25,000 or more","20,000 to 24,999",Less than HS,1965
+2018,white,male,favor,Hispanic,Pacific,"25,000 or more","20,000 to 24,999",HS,1949
+2018,other,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1988
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1971
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","15,000 to 19,999",JR college,1988
+2018,white,male,favor,Hispanic,Pacific,"3,000 to 3,999","5,000 to 5,999",Less than HS,1968
+2018,other,male,favor,Hispanic,Pacific,"25,000 or more","8,000 to 9,999",Bachelor,1944
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","10,000 to 14,999",HS,1989
+2018,other,male,favor,Hispanic,Pacific,"25,000 or more","15,000 to 19,999",Less than HS,1969
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1976
+2018,white,female,oppose,Hispanic,Pacific,"25,000 or more","25,000 or more",Less than HS,1956
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Graduate,1953
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1957
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1988
+2018,white,female,favor,Not Hispanic,E N Central,"15,000 to 19,999","6,000 to 6,999",JR college,1957
+2018,other,male,favor,Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1987
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1973
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",JR college,1968
+2018,white,female,favor,Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1991
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","10,000 to 14,999",Graduate,1953
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1965
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1966
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1955
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1979
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1980
+2018,white,male,oppose,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1968
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1973
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1987
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1972
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1966
+2018,other,male,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1984
+2018,white,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",HS,1973
+2018,other,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1989
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1953
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1984
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1967
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","8,000 to 9,999",HS,1965
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","15,000 to 19,999",JR college,1976
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1981
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1948
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1992
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",JR college,1990
+2018,black,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","10,000 to 14,999",HS,1983
+2018,other,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1950
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1979
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",JR college,1966
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1978
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Graduate,1948
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Bachelor,1973
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","5,000 to 5,999",HS,2000
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","1,000 or less",HS,1946
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Bachelor,1977
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Bachelor,1988
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Graduate,1989
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Less than HS,1984
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Graduate,1949
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",HS,1948
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Bachelor,1984
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",HS,1965
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",JR college,1955
+2018,other,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",JR college,NA
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Bachelor,1969
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",HS,1971
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","20,000 to 24,999",HS,1961
+2018,white,female,favor,Not Hispanic,Pacific,"1,000 or less","3,000 to 3,999",Graduate,1967
+2018,other,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1976
+2018,other,female,favor,Not Hispanic,Pacific,"25,000 or more","15,000 to 19,999",Bachelor,1986
+2018,other,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1996
+2018,black,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1984
+2018,black,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1972
+2018,black,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",Graduate,1972
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1986
+2018,other,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",JR college,1970
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1948
+2018,other,male,favor,Not Hispanic,W S Central,"25,000 or more","3,000 to 3,999",Bachelor,1959
+2018,other,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Graduate,1967
+2018,black,female,favor,Not Hispanic,W S Central,"25,000 or more","15,000 to 19,999",HS,1986
+2018,black,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1974
+2018,white,male,favor,Hispanic,W S Central,"25,000 or more","25,000 or more",Less than HS,1985
+2018,white,male,oppose,Hispanic,W S Central,"20,000 to 24,999","25,000 or more",Less than HS,1965
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1985
+2018,other,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1980
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Graduate,1952
+2018,other,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1989
+2018,black,female,oppose,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1985
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1964
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1946
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","15,000 to 19,999",HS,1958
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1955
+2018,white,male,favor,Not Hispanic,W S Central,"15,000 to 19,999","10,000 to 14,999",HS,1973
+2018,white,female,favor,Not Hispanic,W S Central,"20,000 to 24,999","1,000 or less",HS,1996
+2018,white,female,oppose,Not Hispanic,W S Central,"8,000 to 9,999","1,000 or less",HS,1942
+2018,black,female,favor,Not Hispanic,W S Central,"3,000 to 3,999","1,000 to 2,999",HS,1992
+2018,black,male,oppose,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1963
+2018,white,female,favor,Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1980
+2018,black,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1971
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",JR college,1983
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","20,000 to 24,999",Bachelor,1953
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1965
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","10,000 to 14,999",JR college,1956
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1952
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","3,000 to 3,999",HS,1948
+2018,other,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1989
+2018,other,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1979
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1965
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Graduate,1981
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"15,000 to 19,999","3,000 to 3,999",HS,1978
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1973
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Graduate,1988
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"10,000 to 14,999","20,000 to 24,999",HS,1962
+2018,other,female,favor,Hispanic,Mid Atlantic,"8,000 to 9,999","10,000 to 14,999",Less than HS,1991
+2018,other,male,favor,Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1965
+2018,black,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",JR college,1952
+2018,black,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1970
+2018,black,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1968
+2018,black,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1955
+2018,other,male,oppose,Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1992
+2018,other,male,favor,Hispanic,W S Central,"15,000 to 19,999","5,000 to 5,999",HS,1990
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1962
+2018,white,male,favor,Hispanic,W S Central,"8,000 to 9,999","1,000 or less",HS,1998
+2018,other,male,favor,Not Hispanic,W S Central,"25,000 or more","3,000 to 3,999",HS,1978
+2018,white,female,favor,Hispanic,W S Central,"25,000 or more","15,000 to 19,999",HS,1979
+2018,other,male,favor,Hispanic,W S Central,"25,000 or more","25,000 or more",Less than HS,1978
+2018,black,female,favor,Not Hispanic,W S Central,"25,000 or more","15,000 to 19,999",HS,1979
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Graduate,1977
+2018,other,male,favor,Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1984
+2018,black,female,favor,Not Hispanic,S Atlantic,"15,000 to 19,999","15,000 to 19,999",HS,1989
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1991
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1956
+2018,other,female,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1990
+2018,black,male,favor,Not Hispanic,S Atlantic,"10,000 to 14,999","10,000 to 14,999",HS,1971
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1976
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","3,000 to 3,999",HS,1980
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1965
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","8,000 to 9,999",HS,1967
+2018,other,female,favor,Hispanic,S Atlantic,"15,000 to 19,999","10,000 to 14,999",Less than HS,1999
+2018,other,male,oppose,Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",Less than HS,1972
+2018,other,female,favor,Not Hispanic,S Atlantic,"4,000 to 4,999","4,000 to 4,999",HS,1996
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1989
+2018,black,female,favor,Not Hispanic,S Atlantic,"10,000 to 14,999","10,000 to 14,999",HS,1982
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1978
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,NA
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1967
+2018,other,female,favor,Hispanic,S Atlantic,"25,000 or more","20,000 to 24,999",HS,1992
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1950
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",JR college,1984
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","10,000 to 14,999",Bachelor,1953
+2018,white,female,favor,Not Hispanic,S Atlantic,"4,000 to 4,999","4,000 to 4,999",HS,1997
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","10,000 to 14,999",JR college,1980
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1968
+2018,other,female,favor,Not Hispanic,S Atlantic,"25,000 or more","20,000 to 24,999",HS,1959
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1947
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",JR college,1960
+2018,black,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","15,000 to 19,999",HS,1986
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1975
+2018,white,male,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1972
+2018,other,male,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1985
+2018,other,male,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1953
+2018,white,female,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1962
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1947
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1985
+2018,white,female,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1990
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Graduate,1972
+2018,black,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1970
+2018,black,male,favor,Not Hispanic,E N Central,"20,000 to 24,999","20,000 to 24,999",JR college,1968
+2018,black,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1970
+2018,black,male,favor,Not Hispanic,E N Central,"20,000 to 24,999","5,000 to 5,999",HS,1993
+2018,black,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",JR college,1990
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Less than HS,1968
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","7,000 to 7,999",HS,1998
+2018,white,female,favor,Not Hispanic,E N Central,"20,000 to 24,999","20,000 to 24,999",Graduate,1947
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","20,000 to 24,999",Less than HS,1971
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1953
+2018,black,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1961
+2018,white,female,favor,Not Hispanic,E N Central,"15,000 to 19,999","5,000 to 5,999",Bachelor,1953
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1971
+2018,white,male,favor,NA,Pacific,"25,000 or more","25,000 or more",HS,1991
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1964
+2018,other,male,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1984
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1982
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1976
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1960
+2018,white,female,favor,Hispanic,Mountain,"15,000 to 19,999","15,000 to 19,999",JR college,1966
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1962
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1972
+2018,other,female,favor,Not Hispanic,Mountain,"25,000 or more","10,000 to 14,999",Less than HS,1995
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1970
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1990
+2018,other,female,favor,Hispanic,Mountain,"25,000 or more","20,000 to 24,999",HS,1994
+2018,black,female,favor,Not Hispanic,Mountain,"25,000 or more","10,000 to 14,999",HS,1989
+2018,white,female,favor,Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1959
+2018,other,female,favor,Hispanic,Mountain,"20,000 to 24,999","5,000 to 5,999",HS,1996
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","10,000 to 14,999",Bachelor,1978
+2018,other,male,favor,Hispanic,Mountain,"25,000 or more","20,000 to 24,999",Less than HS,1970
+2018,other,female,favor,Hispanic,Mountain,"25,000 or more","15,000 to 19,999",HS,1974
+2018,black,female,favor,Not Hispanic,W N Central,"7,000 to 7,999","7,000 to 7,999",HS,1959
+2018,white,female,favor,Hispanic,W N Central,"25,000 or more","10,000 to 14,999",Graduate,1978
+2018,black,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Bachelor,1964
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","3,000 to 3,999",HS,1969
+2018,other,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",JR college,1977
+2018,white,male,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",Less than HS,1940
+2018,other,female,oppose,Hispanic,Pacific,"25,000 or more","5,000 to 5,999",Less than HS,1971
+2018,white,female,favor,Not Hispanic,Pacific,"20,000 to 24,999","20,000 to 24,999",HS,1977
+2018,white,female,oppose,Hispanic,Pacific,"25,000 or more","25,000 or more",JR college,1963
+2018,other,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1965
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1961
+2018,white,female,favor,Not Hispanic,Mountain,"1,000 or less","1,000 or less",Bachelor,1954
+2018,black,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1951
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","1,000 to 2,999",HS,1991
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1977
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","10,000 to 14,999",HS,1989
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Bachelor,1973
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Graduate,1969
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1987
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","20,000 to 24,999",Bachelor,1976
+2018,white,male,oppose,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1971
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",JR college,1970
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1961
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","20,000 to 24,999",Bachelor,1950
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1955
+2018,black,male,favor,Not Hispanic,E N Central,"25,000 or more","15,000 to 19,999",HS,1989
+2018,black,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Less than HS,1962
+2018,black,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1991
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1974
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1979
+2018,black,male,oppose,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1993
+2018,black,female,favor,Not Hispanic,W N Central,"10,000 to 14,999","3,000 to 3,999",HS,1976
+2018,black,female,favor,Not Hispanic,W N Central,"5,000 to 5,999","1,000 to 2,999",HS,1999
+2018,black,female,favor,Not Hispanic,W N Central,"25,000 or more","1,000 or less",HS,1992
+2018,black,male,favor,NA,W N Central,"20,000 to 24,999","20,000 to 24,999",HS,1949
+2018,white,female,favor,Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1991
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1965
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1983
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1986
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1962
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1975
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1975
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Bachelor,1960
+2018,white,male,oppose,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1967
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1979
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","1,000 to 2,999",HS,1999
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",JR college,1964
+2018,other,male,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",Less than HS,1969
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1980
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1982
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1996
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1978
+2018,other,female,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",Less than HS,1958
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1964
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Less than HS,1991
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1984
+2018,white,male,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1961
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1975
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1972
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1968
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","5,000 to 5,999",Bachelor,1993
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","10,000 to 14,999",HS,1961
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","10,000 to 14,999",HS,1993
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","7,000 to 7,999",Bachelor,1984
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1984
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1994
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1979
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","15,000 to 19,999",HS,1979
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1963
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Graduate,1967
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1968
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1976
+2018,other,male,favor,Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1988
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",JR college,1972
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","20,000 to 24,999",HS,1983
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",JR college,1960
+2018,white,male,favor,NA,Mid Atlantic,"25,000 or more","25,000 or more",HS,1964
+2018,white,female,oppose,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1974
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"10,000 to 14,999","1,000 to 2,999",JR college,1967
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Less than HS,1979
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1964
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1981
+2018,other,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1975
+2018,white,male,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",HS,1995
+2018,other,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1976
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1973
+2018,white,male,favor,Not Hispanic,E S Central,"10,000 to 14,999","10,000 to 14,999",HS,1996
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1953
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","3,000 to 3,999",HS,1968
+2018,white,male,oppose,Not Hispanic,E N Central,"25,000 or more","10,000 to 14,999",HS,1953
+2018,white,female,oppose,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1971
+2018,other,male,favor,Hispanic,E N Central,"20,000 to 24,999","20,000 to 24,999",HS,1960
+2018,other,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1965
+2018,black,female,favor,Not Hispanic,E N Central,"1,000 to 2,999","1,000 or less",HS,1966
+2018,black,female,favor,Not Hispanic,E N Central,"15,000 to 19,999","1,000 or less",HS,1953
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1968
+2018,white,female,favor,Not Hispanic,W S Central,"15,000 to 19,999","15,000 to 19,999",HS,1991
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1969
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1994
+2018,other,male,favor,Hispanic,W S Central,"25,000 or more","25,000 or more",Less than HS,1987
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1972
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1965
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Graduate,1988
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1957
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1989
+2018,black,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1958
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","5,000 to 5,999",HS,1988
+2018,black,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1943
+2018,black,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1968
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1961
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","10,000 to 14,999",HS,1991
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","1,000 or less",HS,1977
+2018,black,female,favor,Not Hispanic,E N Central,"25,000 or more","20,000 to 24,999",HS,1986
+2018,black,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1988
+2018,other,female,favor,Not Hispanic,E N Central,"25,000 or more","6,000 to 6,999",HS,1959
+2018,other,female,favor,Hispanic,E N Central,"25,000 or more","6,000 to 6,999",HS,1996
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",JR college,1987
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","20,000 to 24,999",Bachelor,1968
+2018,white,male,favor,Not Hispanic,E N Central,"15,000 to 19,999","4,000 to 4,999",HS,1997
+2018,white,female,favor,Not Hispanic,E N Central,"4,000 to 4,999","4,000 to 4,999",HS,1997
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",JR college,1996
+2018,other,male,favor,Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1976
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","1,000 to 2,999",JR college,1934
+2018,black,female,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",JR college,1988
+2018,white,male,favor,Not Hispanic,Mountain,"20,000 to 24,999","20,000 to 24,999",HS,1985
+2018,other,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Graduate,1990
+2018,other,male,oppose,Hispanic,Mountain,"25,000 or more","25,000 or more",Less than HS,1960
+2018,white,male,oppose,Not Hispanic,Mountain,"25,000 or more","1,000 or less",Graduate,1936
+2018,black,male,favor,Not Hispanic,Mountain,"20,000 to 24,999","20,000 to 24,999",HS,1968
+2018,black,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1963
+2018,other,female,favor,Hispanic,Mountain,"25,000 or more","25,000 or more",Bachelor,1977
+2018,white,male,favor,Hispanic,Mountain,"25,000 or more","25,000 or more",JR college,1990
+2018,other,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Bachelor,1954
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1932
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1979
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","1,000 or less",HS,1971
+2018,other,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1987
+2018,white,male,favor,Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1983
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1950
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1972
+2018,white,female,favor,Hispanic,Mountain,"25,000 or more","7,000 to 7,999",Graduate,1975
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Bachelor,1984
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","4,000 to 4,999",Graduate,1986
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1981
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1966
+2018,white,female,oppose,Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1968
+2018,white,male,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",Less than HS,1961
+2018,black,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",Graduate,1960
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",HS,1993
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","8,000 to 9,999",JR college,1987
+2018,white,female,oppose,Not Hispanic,E S Central,"25,000 or more","25,000 or more",HS,1979
+2018,white,male,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",JR college,1991
+2018,white,male,favor,Not Hispanic,E S Central,"25,000 or more","20,000 to 24,999",HS,1983
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","10,000 to 14,999",HS,1974
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","20,000 to 24,999",HS,1965
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",HS,1959
+2018,white,male,favor,Hispanic,New England,"25,000 or more","25,000 or more",HS,1971
+2018,white,male,favor,Hispanic,New England,"25,000 or more","25,000 or more",HS,1954
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Bachelor,1981
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Bachelor,1987
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Bachelor,1986
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Bachelor,1986
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",JR college,1958
+2018,other,female,favor,Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",JR college,1977
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"20,000 to 24,999","20,000 to 24,999",HS,1962
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1994
+2018,other,female,favor,Not Hispanic,Mid Atlantic,"20,000 to 24,999","3,000 to 3,999",Less than HS,1979
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"15,000 to 19,999","10,000 to 14,999",Bachelor,1992
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",JR college,1949
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1979
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1965
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1958
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"10,000 to 14,999","10,000 to 14,999",Less than HS,1949
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",JR college,1988
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1957
+2018,black,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1977
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"15,000 to 19,999","10,000 to 14,999",Less than HS,1951
+2018,black,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1982
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1953
+2018,black,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","8,000 to 9,999",HS,1955
+2018,white,female,oppose,Not Hispanic,Mid Atlantic,"25,000 or more","10,000 to 14,999",JR college,1971
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",HS,1976
+2018,white,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",JR college,1992
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1986
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1987
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1969
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1976
+2018,white,male,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",JR college,1961
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1984
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1969
+2018,other,female,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1988
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1989
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1957
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1994
+2018,white,female,favor,Hispanic,S Atlantic,"25,000 or more","5,000 to 5,999",HS,1993
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1958
+2018,white,male,oppose,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1958
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1987
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1989
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1976
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1989
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1991
+2018,white,male,favor,Not Hispanic,S Atlantic,"15,000 to 19,999","10,000 to 14,999",Less than HS,1987
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1980
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","6,000 to 6,999",Graduate,1988
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1978
+2018,black,female,favor,Not Hispanic,S Atlantic,"1,000 or less","25,000 or more",Less than HS,1957
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","20,000 to 24,999",HS,1961
+2018,white,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","7,000 to 7,999",Less than HS,1992
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1966
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1958
+2018,black,female,favor,Not Hispanic,S Atlantic,"10,000 to 14,999","5,000 to 5,999",HS,1987
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1973
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1969
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1973
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","3,000 to 3,999",Less than HS,1995
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1966
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1971
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1960
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1983
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1989
+2018,black,male,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",HS,1992
+2018,white,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",HS,NA
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","20,000 to 24,999",HS,1989
+2018,other,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1974
+2018,white,female,favor,Not Hispanic,S Atlantic,"10,000 to 14,999","3,000 to 3,999",Less than HS,1994
+2018,white,male,oppose,Not Hispanic,S Atlantic,"25,000 or more","10,000 to 14,999",HS,1953
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1963
+2018,white,male,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",HS,1992
+2018,white,female,oppose,Not Hispanic,S Atlantic,"25,000 or more","15,000 to 19,999",HS,1959
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",JR college,1991
+2018,white,female,favor,Not Hispanic,S Atlantic,"7,000 to 7,999","1,000 or less",HS,1988
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1947
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Less than HS,1965
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",JR college,NA
+2018,white,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","10,000 to 14,999",HS,1955
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1985
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1994
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1971
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1984
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","1,000 to 2,999",JR college,1953
+2018,black,male,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",HS,1955
+2018,white,male,oppose,Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",HS,1989
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1941
+2018,other,male,favor,Hispanic,S Atlantic,"25,000 or more","25,000 or more",Less than HS,1980
+2018,black,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1991
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","5,000 to 5,999",JR college,1973
+2018,white,female,favor,Hispanic,S Atlantic,"15,000 to 19,999","10,000 to 14,999",JR college,1995
+2018,other,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","8,000 to 9,999",HS,1995
+2018,white,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",JR college,1960
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",JR college,1993
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","10,000 to 14,999",HS,1954
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",HS,1962
+2018,white,male,favor,Not Hispanic,E S Central,"25,000 or more","15,000 to 19,999",Less than HS,1984
+2018,black,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",JR college,1986
+2018,black,male,favor,Not Hispanic,E S Central,"25,000 or more","10,000 to 14,999",Less than HS,1985
+2018,black,female,favor,Not Hispanic,E S Central,"1,000 or less","1,000 or less",Less than HS,1986
+2018,black,male,favor,Not Hispanic,E S Central,"15,000 to 19,999","15,000 to 19,999",HS,1965
+2018,black,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",Graduate,1975
+2018,white,male,oppose,Not Hispanic,E S Central,"25,000 or more","25,000 or more",HS,1976
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","20,000 to 24,999",HS,1994
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","20,000 to 24,999",HS,1979
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",Bachelor,1974
+2018,black,female,favor,Not Hispanic,E S Central,"15,000 to 19,999","15,000 to 19,999",JR college,1986
+2018,black,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",Bachelor,1958
+2018,white,male,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",HS,NA
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","20,000 to 24,999",Graduate,1957
+2018,black,male,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",Less than HS,1976
+2018,black,male,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",Bachelor,1967
+2018,white,female,favor,Not Hispanic,E S Central,"10,000 to 14,999","10,000 to 14,999",HS,1974
+2018,black,female,favor,Not Hispanic,E S Central,"20,000 to 24,999","5,000 to 5,999",HS,1948
+2018,black,female,favor,Not Hispanic,E S Central,"10,000 to 14,999","10,000 to 14,999",Less than HS,1983
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",HS,1981
+2018,white,male,oppose,Not Hispanic,E S Central,"25,000 or more","25,000 or more",HS,1956
+2018,black,female,favor,Not Hispanic,E S Central,"4,000 to 4,999","3,000 to 3,999",HS,1982
+2018,black,female,favor,Not Hispanic,E S Central,"8,000 to 9,999","8,000 to 9,999",Bachelor,1964
+2018,black,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",Bachelor,1985
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",JR college,1980
+2018,white,male,favor,Hispanic,E S Central,"25,000 or more","25,000 or more",HS,1955
+2018,other,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",HS,1978
+2018,white,male,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",HS,1964
+2018,white,male,favor,Not Hispanic,E S Central,"20,000 to 24,999","20,000 to 24,999",JR college,1984
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",Bachelor,1983
+2018,white,female,favor,Not Hispanic,E N Central,"20,000 to 24,999","20,000 to 24,999",HS,1986
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1971
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1985
+2018,white,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",HS,1965
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1957
+2018,white,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",HS,1975
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",JR college,1976
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1976
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1971
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1981
+2018,white,female,favor,Not Hispanic,S Atlantic,"15,000 to 19,999","8,000 to 9,999",HS,1941
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1963
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1958
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1975
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1997
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1982
+2018,white,male,oppose,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Graduate,1944
+2018,white,female,oppose,Not Hispanic,Mid Atlantic,"25,000 or more","20,000 to 24,999",HS,1984
+2018,white,female,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1988
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","25,000 or more",Bachelor,1945
+2018,white,male,favor,Not Hispanic,Mid Atlantic,"25,000 or more","4,000 to 4,999",HS,1984
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1979
+2018,white,male,oppose,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1963
+2018,white,female,favor,Not Hispanic,E N Central,"15,000 to 19,999","10,000 to 14,999",JR college,1963
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Graduate,1961
+2018,white,female,favor,Not Hispanic,E N Central,"10,000 to 14,999","3,000 to 3,999",HS,1993
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1960
+2018,black,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1961
+2018,black,female,favor,Not Hispanic,E N Central,"3,000 to 3,999","1,000 to 2,999",HS,1999
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Graduate,1975
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1975
+2018,other,female,favor,Not Hispanic,E N Central,"25,000 or more","8,000 to 9,999",Graduate,1990
+2018,white,male,favor,Hispanic,E N Central,"25,000 or more","20,000 to 24,999",HS,1995
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",JR college,1963
+2018,white,male,favor,Hispanic,E N Central,"25,000 or more","25,000 or more",JR college,1991
+2018,other,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1993
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1966
+2018,black,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1977
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1949
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1955
+2018,white,female,oppose,Not Hispanic,E N Central,"25,000 or more","20,000 to 24,999",Bachelor,1959
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","15,000 to 19,999",Bachelor,1955
+2018,black,male,favor,Not Hispanic,E N Central,"10,000 to 14,999","3,000 to 3,999",Less than HS,1955
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1960
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","10,000 to 14,999",HS,1949
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","1,000 or less",Bachelor,1960
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1945
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","20,000 to 24,999",Bachelor,1983
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1957
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1971
+2018,white,male,oppose,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Less than HS,1954
+2018,black,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1991
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1992
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1964
+2018,white,female,oppose,Not Hispanic,W N Central,"20,000 to 24,999","1,000 or less",JR college,1963
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Bachelor,1984
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Bachelor,1988
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Bachelor,1985
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Bachelor,1970
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","1,000 to 2,999",Bachelor,1958
+2018,white,male,oppose,Not Hispanic,W N Central,"25,000 or more","15,000 to 19,999",HS,1989
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",JR college,1954
+2018,black,male,favor,Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1994
+2018,white,male,oppose,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Bachelor,1952
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Bachelor,1971
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Graduate,1948
+2018,white,female,favor,Not Hispanic,W N Central,"20,000 to 24,999","20,000 to 24,999",HS,1992
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Graduate,1959
+2018,white,male,favor,Hispanic,W N Central,"25,000 or more","25,000 or more",Less than HS,1963
+2018,other,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Bachelor,1968
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1961
+2018,white,male,oppose,Not Hispanic,W N Central,"15,000 to 19,999","10,000 to 14,999",JR college,1963
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Bachelor,1973
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1960
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Graduate,1973
+2018,white,female,oppose,Not Hispanic,W N Central,"25,000 or more","3,000 to 3,999",Less than HS,1931
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1994
+2018,black,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1969
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","20,000 to 24,999",JR college,1945
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",JR college,1960
+2018,white,male,favor,Not Hispanic,W S Central,"15,000 to 19,999","15,000 to 19,999",HS,1993
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1946
+2018,black,female,favor,Not Hispanic,W S Central,"20,000 to 24,999","15,000 to 19,999",HS,1956
+2018,white,female,favor,Not Hispanic,W S Central,"10,000 to 14,999","10,000 to 14,999",JR college,1979
+2018,white,female,oppose,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1954
+2018,white,female,favor,Hispanic,W S Central,"1,000 to 2,999","3,000 to 3,999",HS,1994
+2018,other,female,favor,Hispanic,W S Central,"20,000 to 24,999","15,000 to 19,999",HS,1985
+2018,other,female,oppose,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Graduate,1973
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Less than HS,1941
+2018,other,male,favor,Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1969
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","1,000 to 2,999",Less than HS,1994
+2018,black,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1965
+2018,other,male,favor,Hispanic,W S Central,"6,000 to 6,999","1,000 or less",HS,1997
+2018,other,male,favor,Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1984
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1958
+2018,other,female,favor,Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1965
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1985
+2018,other,male,favor,Hispanic,W S Central,"25,000 or more","20,000 to 24,999",Less than HS,1991
+2018,other,female,favor,Hispanic,W S Central,"25,000 or more","25,000 or more",Less than HS,1963
+2018,other,male,oppose,Hispanic,W S Central,"25,000 or more","25,000 or more",Less than HS,1969
+2018,black,female,favor,Not Hispanic,W S Central,"8,000 to 9,999","1,000 to 2,999",HS,1941
+2018,other,female,favor,Hispanic,W S Central,"10,000 to 14,999","3,000 to 3,999",Less than HS,1973
+2018,black,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1985
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",JR college,1983
+2018,white,female,favor,Hispanic,Mountain,"25,000 or more","25,000 or more",Graduate,1983
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1952
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1958
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1984
+2018,white,male,favor,Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1994
+2018,other,female,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Bachelor,1954
+2018,white,male,favor,Hispanic,Mountain,"25,000 or more","25,000 or more",Less than HS,1962
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","10,000 to 14,999",HS,1945
+2018,white,female,favor,Not Hispanic,Mountain,"15,000 to 19,999","1,000 to 2,999",HS,1965
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Bachelor,1979
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Graduate,1962
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Graduate,1974
+2018,white,male,favor,Not Hispanic,Mountain,"10,000 to 14,999","8,000 to 9,999",Bachelor,1994
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Bachelor,1989
+2018,white,female,oppose,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Bachelor,1985
+2018,white,male,favor,Hispanic,Mountain,"25,000 or more","8,000 to 9,999",HS,1972
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1988
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Bachelor,1969
+2018,white,male,favor,Hispanic,Mountain,"25,000 or more","25,000 or more",JR college,1967
+2018,white,male,favor,Hispanic,Mountain,"25,000 or more","25,000 or more",HS,1994
+2018,other,female,favor,Hispanic,Pacific,"25,000 or more","1,000 to 2,999",Less than HS,1976
+2018,other,male,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1988
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1986
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1967
+2018,black,male,favor,Not Hispanic,Pacific,"15,000 to 19,999","10,000 to 14,999",HS,1990
+2018,other,male,favor,Hispanic,Pacific,"8,000 to 9,999","7,000 to 7,999",Less than HS,1959
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1986
+2018,other,female,favor,Hispanic,Pacific,"25,000 or more","5,000 to 5,999",HS,1983
+2018,other,female,favor,Hispanic,Pacific,"25,000 or more","15,000 to 19,999",HS,1952
+2018,other,male,favor,Hispanic,Pacific,"8,000 to 9,999","1,000 or less",Less than HS,1974
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1958
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1963
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Graduate,1972
+2018,white,female,oppose,Not Hispanic,Pacific,"20,000 to 24,999","20,000 to 24,999",HS,1965
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",JR college,1961
+2018,black,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1992
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Graduate,1960
+2018,white,female,favor,Not Hispanic,Pacific,"20,000 to 24,999","20,000 to 24,999",JR college,1977
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","20,000 to 24,999",JR college,1990
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",Bachelor,1982
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","20,000 to 24,999",HS,1993
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1985
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1981
+2018,other,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1974
+2018,white,male,favor,Hispanic,Pacific,"25,000 or more","5,000 to 5,999",HS,1952
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","25,000 or more",HS,1983
+2018,white,male,favor,Not Hispanic,Pacific,"25,000 or more","4,000 to 4,999",Less than HS,2000
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","25,000 or more",JR college,1962
+2018,white,female,favor,Hispanic,Pacific,"25,000 or more","15,000 to 19,999",HS,1965
+2018,white,female,favor,Not Hispanic,Pacific,"25,000 or more","4,000 to 4,999",Bachelor,1964
+2018,white,female,favor,Hispanic,Mountain,"20,000 to 24,999","20,000 to 24,999",HS,1967
+2018,white,male,oppose,Hispanic,Mountain,"20,000 to 24,999","15,000 to 19,999",HS,1996
+2018,white,female,favor,Hispanic,Mountain,"20,000 to 24,999","10,000 to 14,999",HS,1965
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","25,000 or more",Graduate,1990
+2018,black,male,favor,Not Hispanic,Mountain,"25,000 or more","20,000 to 24,999",HS,1992
+2018,white,female,favor,Not Hispanic,Mountain,"10,000 to 14,999","10,000 to 14,999",HS,1990
+2018,white,female,favor,Not Hispanic,Mountain,"25,000 or more","10,000 to 14,999",JR college,1952
+2018,white,male,favor,Not Hispanic,Mountain,"25,000 or more","20,000 to 24,999",HS,1959
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1954
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1981
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Bachelor,1979
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","10,000 to 14,999",Bachelor,1979
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1961
+2018,other,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1972
+2018,white,male,favor,Not Hispanic,W S Central,"20,000 to 24,999","25,000 or more",JR college,1967
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1979
+2018,white,female,favor,Not Hispanic,W S Central,"10,000 to 14,999","10,000 to 14,999",HS,1982
+2018,black,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1970
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1969
+2018,white,male,favor,Hispanic,W S Central,"25,000 or more","25,000 or more",Less than HS,1978
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",HS,1956
+2018,white,female,favor,Not Hispanic,W S Central,"20,000 to 24,999","10,000 to 14,999",HS,1996
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Graduate,1980
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","20,000 to 24,999",HS,1993
+2018,white,female,favor,Not Hispanic,W S Central,"25,000 or more","8,000 to 9,999",Graduate,1946
+2018,white,female,favor,Not Hispanic,W S Central,"20,000 to 24,999","20,000 to 24,999",HS,1953
+2018,white,male,favor,Not Hispanic,W S Central,"25,000 or more","25,000 or more",Less than HS,1972
+2018,black,female,favor,Not Hispanic,W N Central,"25,000 or more","20,000 to 24,999",HS,1986
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","20,000 to 24,999",Bachelor,1992
+2018,black,female,favor,Not Hispanic,W N Central,"1,000 or less","1,000 or less",HS,1998
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1980
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Graduate,1985
+2018,white,male,oppose,Not Hispanic,W N Central,"25,000 or more","10,000 to 14,999",HS,1955
+2018,black,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1993
+2018,black,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",Less than HS,1963
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","10,000 to 14,999",HS,1989
+2018,other,female,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1987
+2018,white,female,favor,Not Hispanic,W N Central,"20,000 to 24,999","10,000 to 14,999",JR college,1938
+2018,white,female,favor,Not Hispanic,W N Central,"25,000 or more","8,000 to 9,999",HS,1979
+2018,white,male,favor,Not Hispanic,W N Central,"25,000 or more","25,000 or more",HS,1966
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1982
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1971
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","10,000 to 14,999",HS,1953
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1962
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1978
+2018,white,female,favor,Hispanic,E N Central,"10,000 to 14,999","10,000 to 14,999",Bachelor,1988
+2018,black,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1959
+2018,white,female,favor,Not Hispanic,E N Central,"20,000 to 24,999","4,000 to 4,999",HS,1962
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1956
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","15,000 to 19,999",JR college,1978
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Bachelor,1967
+2018,white,male,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1959
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1986
+2018,other,male,favor,Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1991
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","20,000 to 24,999",HS,1978
+2018,white,female,favor,Not Hispanic,S Atlantic,"15,000 to 19,999","15,000 to 19,999",Bachelor,1971
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1961
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","10,000 to 14,999",Less than HS,1957
+2018,white,female,favor,Not Hispanic,E N Central,"20,000 to 24,999","3,000 to 3,999",HS,1963
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","15,000 to 19,999",HS,1970
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",JR college,1962
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",Graduate,1988
+2018,white,female,favor,Not Hispanic,E N Central,"25,000 or more","25,000 or more",HS,1961
+2018,white,male,favor,Not Hispanic,E N Central,"10,000 to 14,999","10,000 to 14,999",HS,1981
+2018,other,female,favor,Hispanic,E S Central,"25,000 or more","15,000 to 19,999",Less than HS,1984
+2018,other,female,favor,Hispanic,E S Central,"3,000 to 3,999","20,000 to 24,999",HS,1997
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","8,000 to 9,999",Less than HS,1984
+2018,white,female,oppose,Not Hispanic,E S Central,"25,000 or more","25,000 or more",JR college,1978
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",HS,1988
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","20,000 to 24,999",HS,1983
+2018,white,female,favor,Not Hispanic,E S Central,"25,000 or more","25,000 or more",HS,1970
+2018,other,male,favor,Hispanic,E S Central,"25,000 or more","20,000 to 24,999",Less than HS,1984
+2018,black,male,favor,Not Hispanic,S Atlantic,"10,000 to 14,999","1,000 or less",HS,1977
+2018,black,female,favor,Not Hispanic,S Atlantic,"1,000 to 2,999","1,000 to 2,999",HS,1995
+2018,black,female,oppose,Not Hispanic,S Atlantic,"8,000 to 9,999","3,000 to 3,999",HS,1997
+2018,black,female,favor,Not Hispanic,S Atlantic,"20,000 to 24,999","20,000 to 24,999",HS,1990
+2018,white,male,oppose,Not Hispanic,S Atlantic,"8,000 to 9,999","1,000 or less",Less than HS,1952
+2018,black,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Less than HS,1966
+2018,black,male,favor,Not Hispanic,S Atlantic,"10,000 to 14,999","20,000 to 24,999",HS,1986
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1964
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","8,000 to 9,999",HS,1993
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","20,000 to 24,999",Less than HS,1965
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",HS,1992
+2018,white,male,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",Bachelor,1962
+2018,white,female,favor,Not Hispanic,S Atlantic,"25,000 or more","25,000 or more",JR college,1975
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","6,000 to 6,999",Bachelor,1961
+2018,white,male,favor,Not Hispanic,New England,"1,000 to 2,999","1,000 to 2,999",Bachelor,1952
+2018,white,male,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",JR college,1968
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",Graduate,1964
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","8,000 to 9,999",Bachelor,1993
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","25,000 or more",HS,1989
+2018,white,female,favor,Not Hispanic,New England,"25,000 or more","15,000 to 19,999",HS,1943

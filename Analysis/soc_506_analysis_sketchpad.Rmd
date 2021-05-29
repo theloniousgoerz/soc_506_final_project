@@ -1,5 +1,5 @@
 ---
-title: "SOC 506: Analysis"
+title: "SOC 506: Analysis and cleaning "
 output: html_document
 
 ---
@@ -79,25 +79,42 @@ gss_clean <- gss_clean %>% filter(rincome != is.na(rincome))
 
 ```
 
-# Analysis 
-
-### Summary Statistics 
 
 ```{r}
 # Look at the data. 
 # Create some summary statistics 
-tbl_summary(gss_clean)
+gss_clean <- gss_clean %>% na.omit()
+# Write GSS clean csv 
+#write_csv(gss_clean, file = "../Data/gss_clean.csv")
+
+data <- read_csv("../Data/gss_clean.csv")
 ```
 
-### Analysis 
+```{r}
+# logistic regression model 
+data_logistic <- data %>% mutate(sex_ed_approval = ifelse(sexeduc == "favor",1,0))
 
-In this section I conduct the analysis using logistic regression. After presenting full and restricted models of the data, I summarize the results and I present some implications. After that, I present a description of the model validation and testing for prediction after. 
+# GLM Base. 
+glm_base <- glm(sex_ed_approval ~ rincome, 
+                data = data_logistic, 
+                family = binomial(link = "logit"))
+summary(glm_base) # Reference category is the lowest income level. 
+```
 
-### Model validation
+For thise that are in the 25,000 dollar a year or more category, thre is a significant `r summary(glm_base)$coefficients[6]` increase in the log odds of approving of sex education in public schools. All of the other categories are not significant. 
 
-### Discussion and conclusion 
+```{r}
+# Full glm 
+glm_full <- glm(sex_ed_approval ~ rincome + race + sex + 
+                 # region + 
+                  degree + hispanic + cohort, 
+                data = data_logistic,
+    family = binomial(link = "logit"))
+summary(glm_full)
+```
 
-### Code appendix
-
+```{r}
+modelsummary:: modelsummary(list(glm_base,glm_full))
+```
 
 
