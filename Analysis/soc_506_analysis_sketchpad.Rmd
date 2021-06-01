@@ -4,14 +4,15 @@ output: html_document
 
 ---
 
-```{r}
+```{r, include = F}
 # Load packages 
 library(readr)
 library(tidyverse)
-library(nnet)
 library(effects)
-library(haven)
 library(gtsummary)
+```
+
+```{r}
 data_gss <- read_csv("../Data/gss_proj_data.csv")
 
 # Data cleaning. 
@@ -92,7 +93,8 @@ data <- read_csv("../Data/gss_clean.csv")
 
 ```{r}
 # logistic regression model 
-data_logistic <- data %>% mutate(sex_ed_approval = ifelse(sexeduc == "favor",1,0))
+data_logistic <- data %>% mutate(sex_ed_approval = ifelse(sexeduc == "favor",1,0)) %>% 
+  na.omit
 
 # GLM Base. 
 glm_base <- glm(sex_ed_approval ~ rincome, 
@@ -101,20 +103,140 @@ glm_base <- glm(sex_ed_approval ~ rincome,
 summary(glm_base) # Reference category is the lowest income level. 
 ```
 
-For thise that are in the 25,000 dollar a year or more category, thre is a significant `r summary(glm_base)$coefficients[6]` increase in the log odds of approving of sex education in public schools. All of the other categories are not significant. 
+For those that are in the 25,000 dollar a year or more category, thre is a significant `r summary(glm_base)$coefficients[6]` increase in the log odds of approving of sex education in public schools. All of the other categories are not significant. 
 
 ```{r}
 # Full glm 
 glm_full <- glm(sex_ed_approval ~ rincome + race + sex + 
-                 # region + 
                   degree + hispanic + cohort, 
-                data = data_logistic,
+                  data = data_logistic,
     family = binomial(link = "logit"))
 summary(glm_full)
 ```
 
+Adding in the other predictors, controlling for race, gender, and year born, all are insignificant except for cohort. For a one year increase in the year born, there is a `r summary(glm_full)$coefficients[29]` increase in the log-odds of favoring sex education in public schools holding all else constant. 
+
 ```{r}
-modelsummary:: modelsummary(list(glm_base,glm_full))
+# Create nice coefficient names. 
+
+coefs = c("(Intercept)" = "Constant",
+             "rincome1,000 to 2,999" = "$1000-2,999",
+             "rincome3,000 to 3,999" = "$3000-3,999",
+             "rincome4,000 to 4,999" = "$4,000-4,999",
+             "rincome5,000 to 5,999" = "$5,000-5,999",
+             "rincome6,000 to 6,999" = "$6,000-6,999",
+             "rincome7,000 to 7,999" = "$7,000-7,999",
+             "rincome8,000 to 9,999" = "8,000-9,999",
+             "rincome10,000 to 14,999" = "$10,000-14,999",
+             "rincome15,000 to 19,999" = "$15,000-19,999",
+             "rincome20,000 to 24,999" = "$20,000-24,999",
+             "rincome25,000 or more" = "$25,000 or more",
+             "raceother" = "Race: Other",
+             "racewhite" = "Race:White",
+             "sexmale" = "Male",
+             "degreeGraduate" = "Graduate Degree",
+             "degreeHS" = "High School",
+             "degreeJR college" = "Community College",
+             "degreeLess than HS" = "less than HS",
+             "hispanicNot Hispanic" = "Not Hispanic",
+             "cohort" = "Year born")
+modelsummary:: modelsummary(list(glm_base,glm_full),
+                            coef_map = coefs, 
+                            estimate = "{estimate}{stars}", 
+                            title = "Full and Restricted Logistic Models (Log Odds)")
+
 ```
+
+## Model Checking 
+
+## LRT 
+
+```{r}
+## LRT 
+lmtest::lrtest(glm_base,glm_full)
+```
+
+Running a model comparison, it is clear from a clear statistically significant difference in the log-likelihoods. In addition the AIC and BIC are lower for the full model. 
+
+##  Confusion Matrix 
+
+```{r}
+library(caret)
+
+# Rep data 
+mydata2<- data_logistic
+# convert admit to a factor 
+mydata2$sex_ed_approval<-factor(mydata2$sex_ed_approval,
+                      # levels are 0,1 to disapprove and approve.
+                      levels=c("0","1"),labels=c("Disapprove","Approve"))
+# Partition the data into a trianing and test set 
+Train <- createDataPartition(mydata2$sex_ed_approval, 
+                             # calssify and admit as .6
+                             p=0.6, list=FALSE)
+# create the training set 
+training <-data.frame(mydata2[ Train[,1], ])
+# create the test set
+testing <- data.frame(mydata2[ -Train[,1], ])
+# Fit the logit model 
+mod_fit <- train(sex_ed_approval ~ rincome + race + sex + 
+                  degree + hispanic + cohort,
+                 data=training, method="glm", family="binomial")
+# predict with the new data 
+pred <- predict(mod_fit, newdata=testing)
+# compute the accuracy score 
+accuracy <- table(pred, testing[,"sex_ed_approval"])
+# out put the sim of the diagonals of accuracy over the sum of accuracy 
+cat('Accuracy:',sum(diag(accuracy))/sum(accuracy),'\n')
+# predict  the model again
+pred <- predict(mod_fit, newdata=testing)
+# create a confusion matrix 
+confusionMatrix(data=pred, testing$sex_ed_approval)
+```
+
+The confusion matrix shows that the model did not classify any of the people as disapproving, and all of the as approving, this is potentially a problem since we know that there is variation. In total, there was a negative predicted value of .93 which indicates that the model is really good at lassifyong people as approving but pretty bad otherwise.  
+
+# Visuals 
+
+```{r}
+# Create a visual of the predicted probabilities 
+newdata <- with(data_logistic, data.frame(
+  # Set all coefficients to constant, except cohort and sex. 
+  rincome = rep("25,000 or more",138),
+  sex = as.factor(rbind(rep("male",
+                            69),rep("female",69))),
+  cohort = c(seq(1932,2000,by = 1),seq(1932,2000,by = 1)),
+  race = rep("white",138),
+  degree = rep("Graduate",138),
+  hispanic = rep("Not Hispanic",138)
+))
+
+## genarate the predicted probabilities 
+predict <- cbind(newdata,predict(glm_full,newdata,type = "link",se = T))
+
+## genarating the predicted probability and the upper and lower bounds. 
+predict <- within(predict, {predictedprobs <- plogis(fit)
+LL <- plogis(fit - (1.96 * se.fit))
+UL <- plogis(fit + (1.96 * se.fit))
+})
+predict
+## now we can plot the data. 
+
+predict %>% ggplot(aes(x = cohort,y = predictedprobs, fill = sex))  + 
+  geom_ribbon(aes(ymin = LL, ymax = UL, fill = sex), alpha = .2) + 
+  geom_line(aes(col = sex), size = 1) + theme_minimal() + 
+  labs(x = "Year Born",
+     y = "Probability of Support",
+    title = "Probability of supporting Sex Ed in Schools",
+      subtitle = "For $ > 25,000, non-hispanic, White") + 
+  scale_fill_manual(name = "Sex",
+                    labels = c("Female","Male"), 
+                    values = c("Orange","blue")) + 
+  scale_color_manual(name = "Sex",
+                    labels = c("Female","Male"), 
+                    values = c("Orange","blue"))
+
+
+```
+
 
 

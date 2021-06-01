@@ -8,7 +8,7 @@ header-includes:
 - \newcommand{\elandscape}{\end{landscape}}
 - \usepackage{setspace}\doublespacing
 output: pdf_document
-fontsize: 12pt 
+fontsize: 11pt 
 bibliography: references.bib
 ---
 
@@ -18,7 +18,7 @@ Researchers are often interested how opinion on cannonically controversial socia
 
 First, I present a description of the data and a discussion of the analytic strategy. Then I step through the methods, present some visual and desriptive results. In this analysis I estimate a logistic regression. The first logistic regression looks at how income and associated covariates predict support or opposition to sex education in school. I estimate a variety of formulations and I step through analysis and model critique.
 
-Finally, I offer some conclusions and insights about the relationship between race, income, and attitudes about sex education. This document is accompanied by a detailed repository that is also on github \url{https://github.com/theloniousgoerz}, which provides all of the supplemental code and documentation needed to generate this report and the analysis. 
+Finally, I offer some conclusions and insights about the relationship between race, income, and attitudes about sex education. This document is accompanied by a detailed repository that is also on github ^[\url{https://github.com/theloniousgoerz}], which provides all of the supplemental code and documentation needed to generate this report and the analysis. 
 
 # Background and data 
 
@@ -26,7 +26,9 @@ Effective sex education in public schools has been shown to be important from a 
 
 With this motivation, I focus this analysis on looking at the covariates and potential predictors of support or lackthereof related to sex education. In this analysis, I use the General Social Survey (GSS), the longest running nationally representative opinion poll, to understand how different economic, racial, and place based attributes correlated with supporting sex education. While the GSS cannot be compared over time like a normal panel survey can, it can represent ggregate opinions and provides rich data to do so.
 
-I employ the GSSR package to look at the 2018 sample of respondants, and use the question "sexeduc" to test this hypothesis. In the table below, I summarize the variables that I pull from. I exlude income and respondant income and provide those in the appendix as they have many categories. 
+I employ the GSSR package to look at the 2018 sample of respondants, and use the question "sexeduc" to test this hypothesis. In the table below, I summarize the variables that I pull from. 
+
+## Data summary 
 
 ```{r, include = F}
 # Load packages
@@ -37,8 +39,10 @@ library(gt)
 # Load data. 
 data <- read_csv("./Data/gss_clean.csv")
 # RM cols. 
-
+options(scipen = 999, digits = 3)
 ```
+
+In this data set there are six variables that I examine. The first is the focal dependent variable sexeduc which asks respondants to approve or dissaprove of sex education in public schools. Next, the first of my major independent variables is the respondants income category. It is important to note that this is not a very useful category because much of the high income variation in the data is obscured by binning the category to $25,000 or more. This represents a big problem with some survey data. Next, there are Race, a dummy representing black and white, an age variable, a dummy for Hispanic or not, and a dummy for sex as well as a variable that record's the person's level of education. 
 
 ```{r, echo = F, message = F, warning = F, fig.width=5}
 # Cleaning 
@@ -49,7 +53,7 @@ data <- data %>% filter(cohort != is.na(cohort) & hispanic != is.na(hispanic))
 data <- data %>% mutate(age = 2018-cohort)
 # Summary table 
 library(kableExtra)
-data %>% select(-cohort,-year,-rincome,-income)  %>% 
+data %>% select(-cohort,-year,-rincome,-income,-region)  %>% 
   tbl_summary(label = list(
             sexeduc ~ "View on Sex Education",
             race ~ "Race",
@@ -61,18 +65,205 @@ data %>% select(-cohort,-year,-rincome,-income)  %>%
    as_kable_extra(booktabs = T) %>% ## make KE so that it will take args from gtsum 
   # reduce font size to make table fit. 
   # you may also use the `latex_options = "scale_down"` argument here.
- kableExtra::kable_styling(font_size = 10, position = "center")
+ kableExtra::kable_styling(font_size = 7, position = "center")
 ```
 
-### Analysis 
+Summary statistics show that the sample is majority non-Hispanic White with at least a high school education. Overwhelmingly, most favor sex education as well and are at an avrage age of 44. Further summaries in the appendix show that the majority also make a respodant income of more than $25,000 per year. 
 
-In this section I conduct the analysis using logistic regression. After presenting full and restricted models of the data, I summarize the results and I present some implications. After that, I present a description of the model validation and testing for prediction after. 
+### Methods
 
-### Model validation
+I fit two logistic regression models that aim at classifying one's approval or dissaproval about sex education in schools. The models were then compared together to see whether trends in the base model were robust to covariates, to test the relationship between income and approval of sex education. 
+
+I specify the following model: 
+
+$$
+\begin{aligned}
+  ln(\frac{p}{1-p}) &=  \alpha + \beta_{income} + \beta_{race} + \beta_{sex} + \beta_{education} + \beta_{Hispanic} + \epsilon \\
+  \epsilon &\sim Bin(n,p)
+\end{aligned}
+$$
+
+Where the outcome is the log odds of approving of sex education, and alpha is a constant term, the betas are the predictor variables, and the error term is stochastic variation that is distributed binomially with n trials and a probability of p. The reference category for income is the lowest vategory at "Less than $1,000".
+
+### Results
+
+In this section I conduct the analysis using logistic regression. After presenting full and restricted models of the data, I summarize the results and I present some implications. After that, I present a description of the model validation and critique. 
+
+```{r, include = F}
+# logistic regression model 
+data_logistic <- data %>% mutate(sex_ed_approval = ifelse(sexeduc == "favor",1,0)) %>% 
+  na.omit
+
+# GLM Base. 
+glm_base <- glm(sex_ed_approval ~ rincome, 
+                data = data_logistic, 
+                family = binomial(link = "logit"))
+summary(glm_base) # Reference category is the lowest income level. 
+```
+
+```{r, include = F}
+# Full glm 
+glm_full <- glm(sex_ed_approval ~ rincome + race + sex + 
+                  degree + hispanic + cohort, 
+                  data = data_logistic,
+    family = binomial(link = "logit"))
+summary(glm_full)
+```
+
+
+```{r, echo = F}
+# Create nice coefficient names. 
+
+coefs = c("(Intercept)" = "Constant",
+             "rincome1,000 to 2,999" = "$1000-2,999",
+             "rincome3,000 to 3,999" = "$3000-3,999",
+             "rincome4,000 to 4,999" = "$4,000-4,999",
+             "rincome5,000 to 5,999" = "$5,000-5,999",
+             "rincome6,000 to 6,999" = "$6,000-6,999",
+             "rincome7,000 to 7,999" = "$7,000-7,999",
+             "rincome8,000 to 9,999" = "8,000-9,999",
+             "rincome10,000 to 14,999" = "$10,000-14,999",
+             "rincome15,000 to 19,999" = "$15,000-19,999",
+             "rincome20,000 to 24,999" = "$20,000-24,999",
+             "rincome25,000 or more" = "$25,000 or more",
+             "raceother" = "Race:Other",
+             "racewhite" = "Race:White",
+             "sexmale" = "Male",
+             "degreeGraduate" = "Graduate Degree",
+             "degreeHS" = "High School",
+             "degreeJR college" = "Community College",
+             "degreeLess than HS" = "Less than HS",
+             "hispanicNot Hispanic" = "Not Hispanic",
+             "cohort" = "Year born")
+modelsummary:: modelsummary(list(glm_base,glm_full),
+                            coef_map = coefs, 
+                            estimate = "{estimate}{stars}", 
+                            title = "Full and Restricted Logistic Models (Log Odds)")
+
+```
+
+
+```{r, echo = F, fig.width=5,fig.height=3,fig.align= "center"}
+# Create a visual of the predicted probabilities 
+newdata <- with(data_logistic, data.frame(
+  # Set all coefficients to constant, except cohort and sex. 
+  rincome = rep("25,000 or more",138),
+  sex = as.factor(rbind(rep("male",
+                            69),rep("female",69))),
+  cohort = c(seq(1932,2000,by = 1),seq(1932,2000,by = 1)),
+  race = rep("white",138),
+  degree = rep("Graduate",138),
+  hispanic = rep("Not Hispanic",138)
+))
+
+## genarate the predicted probabilities 
+predict <- cbind(newdata,predict(glm_full,newdata,type = "link",se = T))
+
+## genarating the predicted probability and the upper and lower bounds. 
+predict <- within(predict, {predictedprobs <- plogis(fit)
+LL <- plogis(fit - (1.96 * se.fit))
+UL <- plogis(fit + (1.96 * se.fit))
+})
+## now we can plot the data. 
+
+predict %>% ggplot(aes(x = cohort,y = predictedprobs, fill = sex))  + 
+  geom_ribbon(aes(ymin = LL, ymax = UL, fill = sex), alpha = .2) + 
+  geom_line(aes(col = sex), size = 1) + theme_minimal() + 
+  labs(x = "Year Born",
+     y = "Probability of Support",
+    title = "Probability of supporting Sex Ed in Schools",
+      subtitle = "For $ > 25,000, non-Hispanic, White") + 
+  scale_fill_manual(name = "Sex",
+                    labels = c("Female","Male"), 
+                    values = c("Orange","blue")) + 
+  scale_color_manual(name = "Sex",
+                    labels = c("Female","Male"), 
+                    values = c("Orange","blue")) + 
+  theme(text=element_text(size=8,  family="serif"))
+
+
+```
+
+In the above graph, I present the main results of the model in a visualization, showing how the predicted probability of approving of sex education in public schools varies with age by sex. The overall trend shows that as one's age increases, regardless of sex, there is a steady increase in the predicted probability of approving of sex education, which plateau's at around a birth year of 1980. 
+
+Now, I summarize the model results more formally. 
+
+For those that are in the 25,000 dollar a year or more category, thre is a significant `r summary(glm_base)$coefficients[6]` increase in the log odds of approving of sex education in public schools. All of the other categories are not significant. This might be reflective of the fact that the income categories as a whole are not very useful since we know that in the late 2010s, there are many respondants who make more than 25,000 so this is potentially obscuring a lot of variation. 
+
+Adding in the other predictors, controlling for race, gender, education,, and year born, All are insignificant except for cohort amnd those being in the income category of 25,000 or more  For a one year increase in the year born, there is a `r summary(glm_full)$coefficients[21]` increase in the log-odds of favoring sex education in public schools holding all else constant, which is significant
+. 
+This suggests that the strongest predictors of whether someone approves of sex education is based on their age and their individual income. 
+
+#### Model critique 
+
+Overall, the model seems to fit the data reasonably well. Adding in predictors for demographic and education characteristics shows that the effect of income is still robust to covariates. However, on further tests with the confusion matrix, there is doubt that this model is good for prediction. 
+
+First I compare the AIC,BIC, and Likelihood ratios of these models, it is clear from a statistically significant t-value difference in the log-likelihoods that the full model fits better. In addition the AIC is lower for the model, but the BIC is not. In general, the BIC is a more conservative measure in terms of penalty, so this differance is not unreasonable.  
+
+Upon analyzing a confusion matrix, it shows that the model did not classify any of the people as disapproving, and all of the as approving, this is potentially a problem since we know that there is variation. In total, there was a negative predicted value of .93 which indicates that the model is really good at lassifyong people as approving but pretty bad otherwise.  
 
 ### Discussion and conclusion 
 
-### Code appendix
 
 
+### Bibliography 
 
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\noindent
+
+<div id="refs"></div>
+
+### Appendix 
+
+### Income descriptive statistics 
+
+Below I present a table of supplemental descriptive statistics for the sample. Most people make 25,000 dollars or more, indicating that this income measure is potentially problematic because we obscure a lot of our data that may be contained in the higher areas of the income distribution. 
+
+```{r, echo = F}
+data %>% select(rincome)  %>% 
+  tbl_summary(label = list(rincome ~"Income")
+          ) %>% 
+   as_kable_extra(booktabs = T) %>% ## make KE so that it will take args from gtsum 
+  # reduce font size to make table fit. 
+  # you may also use the `latex_options = "scale_down"` argument here.
+ kableExtra::kable_styling(font_size = 7, position = "center")
+```
+
+\newpage 
+
+### Confusion matrix
+
+```{r, echo = F, message=F,warning=F}
+library(caret)
+
+# Rep data 
+mydata2<- data_logistic
+# convert admit to a factor 
+mydata2$sex_ed_approval<-factor(mydata2$sex_ed_approval,
+                      # levels are 0,1 to disapprove and approve.
+                      levels=c("0","1"),labels=c("Disapprove","Approve"))
+# Partition the data into a trianing and test set 
+Train <- createDataPartition(mydata2$sex_ed_approval, 
+                             # calssify and admit as .6
+                             p=0.6, list=FALSE)
+# create the training set 
+training <-data.frame(mydata2[ Train[,1], ])
+# create the test set
+testing <- data.frame(mydata2[ -Train[,1], ])
+# Fit the logit model 
+mod_fit <- train(sex_ed_approval ~ rincome + race + sex + 
+                  degree + hispanic + cohort,
+                 data=training, method="glm", family="binomial")
+# predict with the new data 
+pred <- predict(mod_fit, newdata=testing)
+# compute the accuracy score 
+accuracy <- table(pred, testing[,"sex_ed_approval"])
+# out put the sim of the diagonals of accuracy over the sum of accuracy 
+cat('Accuracy:',sum(diag(accuracy))/sum(accuracy),'\n')
+# predict  the model again
+pred <- predict(mod_fit, newdata=testing)
+# create a confusion matrix 
+confusionMatrix(data=pred, testing$sex_ed_approval)
+```
