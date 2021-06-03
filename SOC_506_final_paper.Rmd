@@ -1,5 +1,5 @@
 ---
-title: 'SOC 506: Final Research Report'
+title: "**SOC 506  \n  Final Research Report**"
 author: "Thelonious Goerz"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 header-includes:
@@ -14,19 +14,19 @@ bibliography: references.bib
 
 # Introduction 
 
-Researchers are often interested how opinion on cannonically controversial social issues like sexual education in public schools is associated with different demographic characteristics. In this analysis, I take this question and explore how opinions and acceptance about sex education vary accross the income distribution. Particularly central to this analysis is an understanding of how high income individuals favor or do not favor different policies regarding better health education. 
+Researchers are often interested how opinion on cannonically controversial social issues like sexual education in public schools is associated with different demographic characteristics. In this analysis, I take this question and explore how opinions and acceptance about sex education vary across the income distribution. Particularly central to this analysis is an understanding of how high income individuals favor or do not favor different policies regarding better health education. 
 
-First, I present a description of the data and a discussion of the analytic strategy. Then I step through the methods, present some visual and desriptive results. In this analysis I estimate a logistic regression. The first logistic regression looks at how income and associated covariates predict support or opposition to sex education in school. I estimate a variety of formulations and I step through analysis and model critique.
+First, I present a description of the data and a discussion of the analytic strategy. Then I step through the methods, present some visual and descriptive results. In this analysis I estimate a logistic regression. The first logistic regression looks at how income and associated covariates predict support or opposition to sex education in school. I estimate a variety of formulations and I step through analysis and model critique.
 
 Finally, I offer some conclusions and insights about the relationship between race, income, and attitudes about sex education. This document is accompanied by a detailed repository that is also on github ^[\url{https://github.com/theloniousgoerz}], which provides all of the supplemental code and documentation needed to generate this report and the analysis. 
 
 # Background and data 
 
-Effective sex education in public schools has been shown to be important from a health, social and community wellbeing [@fentahun2012parents;@bearman2004chains ]. @bearman2004chains finds that in closed social networks at schools, taking a comprehensive sexual education approach is important for reducing disease, rather than focusing on high risk actors. In addition to this, many health classes attempt to provide this but there is often major pushback from religious groups and other organizations that seeks to restrict public sex education in schools. 
+Effective sex education in public schools has been shown to be important from a health, social and community well being [@fentahun2012parents;@bearman2004chains ]. @bearman2004chains finds that in closed social networks at schools, taking a comprehensive sexual education approach is important for reducing disease, rather than focusing on high risk actors. In addition to this, many health classes attempt to provide this but there is often major push back from religious groups and other organizations that seeks to restrict public sex education in schools. 
 
-With this motivation, I focus this analysis on looking at the covariates and potential predictors of support or lackthereof related to sex education. In this analysis, I use the General Social Survey (GSS), the longest running nationally representative opinion poll, to understand how different economic, racial, and place based attributes correlated with supporting sex education. While the GSS cannot be compared over time like a normal panel survey can, it can represent ggregate opinions and provides rich data to do so.
+With this motivation, I focus this analysis on looking at the covariates and potential predictors of support or lack thereof related to sex education. In this analysis, I use the General Social Survey (GSS), the longest running nationally representative opinion poll, to understand how different economic, racial, and place based attributes correlated with supporting sex education. While the GSS cannot be compared over time like a normal panel survey can, it can represent aggregate opinions and provides rich data to do so.
 
-I employ the GSSR package to look at the 2018 sample of respondants, and use the question "sexeduc" to test this hypothesis. In the table below, I summarize the variables that I pull from. 
+I employ the GSSR package to look at the 2018 sample of respondents, and use the question "sexeduc" to test this hypothesis. In the table below, I summarize the variables that I pull from. 
 
 ## Data summary 
 
@@ -40,9 +40,11 @@ library(gt)
 data <- read_csv("./Data/gss_clean.csv")
 # RM cols. 
 options(scipen = 999, digits = 3)
+# Set knitr options 
+options(knitr.kable.NA = '')
 ```
 
-In this data set there are six variables that I examine. The first is the focal dependent variable sexeduc which asks respondants to approve or dissaprove of sex education in public schools. Next, the first of my major independent variables is the respondants income category. It is important to note that this is not a very useful category because much of the high income variation in the data is obscured by binning the category to $25,000 or more. This represents a big problem with some survey data. Next, there are Race, a dummy representing black and white, an age variable, a dummy for Hispanic or not, and a dummy for sex as well as a variable that record's the person's level of education. 
+In this data set there are six variables that I examine. The first is the focal dependent variable sexeduc which asks respondents to approve or disapprove of sex education in public schools. Next, the first of my major independent variables is the respondents income category. It is important to note that this is not a very useful category because much of the high income variation in the data is obscured by binning the category to $25,000 or more. This represents a big problem with some survey data. Next, there are Race, a dummy representing black and white, an age variable, a dummy for Hispanic or not, and a dummy for sex as well as a variable that record's the person's level of education. 
 
 ```{r, echo = F, message = F, warning = F, fig.width=5}
 # Cleaning 
@@ -61,18 +63,18 @@ data %>% select(-cohort,-year,-rincome,-income,-region)  %>%
             age ~ "Age", 
             hispanic ~ "Hispanic"
           )
-          ) %>% 
-   as_kable_extra(booktabs = T) %>% ## make KE so that it will take args from gtsum 
+          ) %>% as_tibble() %>% 
+   knitr :: kable(booktabs = T,caption = "Summary Statistics") %>% ## make KE so that it will take args from gtsum 
   # reduce font size to make table fit. 
   # you may also use the `latex_options = "scale_down"` argument here.
  kableExtra::kable_styling(font_size = 7, position = "center")
 ```
 
-Summary statistics show that the sample is majority non-Hispanic White with at least a high school education. Overwhelmingly, most favor sex education as well and are at an avrage age of 44. Further summaries in the appendix show that the majority also make a respodant income of more than $25,000 per year. 
+Summary statistics show that the sample is majority non-Hispanic White with at least a high school education. Overwhelmingly, most favor sex education as well and are at an average age of 44. Further summaries in the appendix show that the majority also make a respondent income of more than $25,000 per year. 
 
 ### Methods
 
-I fit two logistic regression models that aim at classifying one's approval or dissaproval about sex education in schools. The models were then compared together to see whether trends in the base model were robust to covariates, to test the relationship between income and approval of sex education. 
+I fit two logistic regression models that aim at classifying one's approval or disapproval about sex education in schools. The models were then compared together to see whether trends in the base model were robust to covariates, to test the relationship between income and approval of sex education. 
 
 I specify the following model: 
 
@@ -83,7 +85,7 @@ $$
 \end{aligned}
 $$
 
-Where the outcome is the log odds of approving of sex education, and alpha is a constant term, the betas are the predictor variables, and the error term is stochastic variation that is distributed binomially with n trials and a probability of p. The reference category for income is the lowest vategory at "Less than $1,000".
+Where the outcome is the log odds of approving of sex education, and alpha is a constant term, the betas are the predictor variables, and the error term is stochastic variation that is distributed binomially with n trials and a probability of p. The reference category for income is the lowest category at "Less than $1,000".
 
 ### Results
 
@@ -188,9 +190,9 @@ In the above graph, I present the main results of the model in a visualization, 
 
 Now, I summarize the model results more formally. 
 
-For those that are in the 25,000 dollar a year or more category, thre is a significant `r summary(glm_base)$coefficients[6]` increase in the log odds of approving of sex education in public schools. All of the other categories are not significant. This might be reflective of the fact that the income categories as a whole are not very useful since we know that in the late 2010s, there are many respondants who make more than 25,000 so this is potentially obscuring a lot of variation. 
+For those that are in the 25,000 dollar a year or more category, there is a significant `r summary(glm_base)$coefficients[6]` increase in the log odds of approving of sex education in public schools. All of the other categories are not significant. This might be reflective of the fact that the income categories as a whole are not very useful since we know that in the late 2010s, there are many respondents who make more than 25,000 so this is potentially obscuring a lot of variation. 
 
-Adding in the other predictors, controlling for race, gender, education,, and year born, All are insignificant except for cohort amnd those being in the income category of 25,000 or more  For a one year increase in the year born, there is a `r summary(glm_full)$coefficients[21]` increase in the log-odds of favoring sex education in public schools holding all else constant, which is significant
+Adding in the other predictors, controlling for race, gender, education,, and year born, All are insignificant except for cohort and those being in the income category of 25,000 or more  For a one year increase in the year born, there is a `r summary(glm_full)$coefficients[21]` increase in the log-odds of favoring sex education in public schools holding all else constant, which is significant
 . 
 This suggests that the strongest predictors of whether someone approves of sex education is based on their age and their individual income. 
 
@@ -198,13 +200,15 @@ This suggests that the strongest predictors of whether someone approves of sex e
 
 Overall, the model seems to fit the data reasonably well. Adding in predictors for demographic and education characteristics shows that the effect of income is still robust to covariates. However, on further tests with the confusion matrix, there is doubt that this model is good for prediction. 
 
-First I compare the AIC,BIC, and Likelihood ratios of these models, it is clear from a statistically significant t-value difference in the log-likelihoods that the full model fits better. In addition the AIC is lower for the model, but the BIC is not. In general, the BIC is a more conservative measure in terms of penalty, so this differance is not unreasonable.  
+First I compare the AIC,BIC, and Likelihood ratios of these models, it is clear from a statistically significant t-value difference in the log-likelihoods that the full model fits better. In addition the AIC is lower for the model, but the BIC is not. In general, the BIC is a more conservative measure in terms of penalty, so this difference is not unreasonable.  
 
-Upon analyzing a confusion matrix, it shows that the model did not classify any of the people as disapproving, and all of the as approving, this is potentially a problem since we know that there is variation. In total, there was a negative predicted value of .93 which indicates that the model is really good at lassifyong people as approving but pretty bad otherwise.  
+Upon analyzing a confusion matrix^[See appendix.], it shows that the model did not classify any of the people as disapproving, and all of the as approving, this is potentially a problem since we know that there is variation. In total, there was a negative predicted value of .93 which indicates that the model is really good at classifying people as approving but pretty bad otherwise.  
+
+One major advantage of the logit link logistic regression is its consistency across prospective and retrospective designs. In this case, I define a sample retrospectively and analyze the data already collected. The main advantage here is that my coefficients will be close to if not the same, had I done the same design and recruited participants and collected the data myself. 
 
 ### Discussion and conclusion 
 
-
+In this analysis, I employed a logistic regression model, fit using a logit link, to understand how different demographic characteristics correlate with approving or disapproving of sex education in public schools. Broadly, the model suggests that there are significant increases in the log-odds of approval, associated with being older and earning above 25,000 dollars in individual income. This is not necessarily surprising, but given the GSS's crude income categories, it makes it difficult to know what the variation may be at 100,000 or more dollars. Another important metric that was not captured for the 2018 cycle of the GSS was religious attendance and religious identification. Knowing these variables might have been important given what we know about religion and sex education already. Overall, the modeling strategy seems appropriate, though due to the smaller sample number of disapprove votes in comparison to approve, running a test with a confusion matrix, casts some doubt on whether this model is predictively powerful at all. If the goal is inference, which in social sciences it almost always is, then this model is appropriate, but to predict it is not very robust.  
 
 ### Bibliography 
 
@@ -219,13 +223,13 @@ Upon analyzing a confusion matrix, it shows that the model did not classify any 
 
 ### Income descriptive statistics 
 
-Below I present a table of supplemental descriptive statistics for the sample. Most people make 25,000 dollars or more, indicating that this income measure is potentially problematic because we obscure a lot of our data that may be contained in the higher areas of the income distribution. 
+In this table, I present a table of supplemental descriptive statistics for the sample. Most people make 25,000 dollars or more, indicating that this income measure is potentially problematic because we obscure a lot of our data that may be contained in the higher areas of the income distribution. 
 
 ```{r, echo = F}
 data %>% select(rincome)  %>% 
   tbl_summary(label = list(rincome ~"Income")
-          ) %>% 
-   as_kable_extra(booktabs = T) %>% ## make KE so that it will take args from gtsum 
+          )  %>% as_tibble %>% 
+   knitr :: kable(booktabs = T, caption = "Summary statistics: Income") %>% ## make KE so that it will take args from gtsum 
   # reduce font size to make table fit. 
   # you may also use the `latex_options = "scale_down"` argument here.
  kableExtra::kable_styling(font_size = 7, position = "center")
@@ -234,6 +238,8 @@ data %>% select(rincome)  %>%
 \newpage 
 
 ### Confusion matrix
+
+Below I present the code and output for the confusion matrix referenced in the analysis section. 
 
 ```{r, echo = F, message=F,warning=F}
 library(caret)
