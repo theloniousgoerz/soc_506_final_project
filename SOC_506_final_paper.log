@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.3)  3 JUN 2021 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.3)  4 JUN 2021 11:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -743,17 +743,17 @@ arning (ext4): destination with the same identifier (name{table.2}) has been al
 ready used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.318 
+l.320 
       ] [6] [7]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-45.
+47.
 (/Users/theloniousgoerz/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [8pdfTeX warning (ext4): destination with the same identifier (name{table.3})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.477 \end{verbatim}
+l.479 \end{verbatim}
                     ] [9] (./SOC_506_final_paper.aux)
 Package rerunfilecheck Info: File `SOC_506_final_paper.out' has not changed.
 (rerunfilecheck)             Checksum: C92EE821664A410D68CC8FB55DBFFED5;1282.
@@ -761,7 +761,7 @@ Package rerunfilecheck Info: File `SOC_506_final_paper.out' has not changed.
 Here is how much of TeX's memory you used:
  12112 strings out of 480517
  179049 string characters out of 5898598
- 498891 words of memory out of 5000000
+ 499891 words of memory out of 5000000
  29481 multiletter control sequences out of 15000+600000
  472684 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -790,7 +790,7 @@ nyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/theloniousgoerz/Library
 ary/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/theloniousgoerz
 /Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/thelonious
 goerz/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on SOC_506_final_paper.pdf (9 pages, 296661 bytes).
+Output written on SOC_506_final_paper.pdf (9 pages, 296857 bytes).
 PDF statistics:
  204 PDF objects out of 1000 (max. 8388607)
  161 compressed objects within 2 object streams
